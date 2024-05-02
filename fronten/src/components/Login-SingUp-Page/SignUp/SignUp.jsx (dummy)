@@ -1,0 +1,171 @@
+import React, { useState } from "react"
+import LeftSection from "../Left-Section/LeftSection";
+import style from "./signUp.module.css";
+// import { useRef } from "react";
+import { useHistory } from "react-router-dom";
+import axios from "axios";
+
+function SignUp() {
+  // const name = useRef();
+  // const email = useRef();
+  // const password = useRef();
+  // const passwordAgain = useRef();
+
+  // const handleClick = async (e) => {
+  //   e.preventDefault();
+  //   if (passwordAgain.current.value !== password.current.value) {
+  //     passwordAgain.current.setCustomValidity("Passwords don't match!");
+  //   } else {
+  //     const user = {
+  //       name: name.current.value,
+  //       email: email.current.value,
+  //       password: password.current.value,
+  //     };
+  //     try {
+  //       // const response = await axios.post("/auth/register", user);
+  //       const response = await axios.post( "http://localhost/api/user/auth/register",
+  //         JSON.stringify({ email, password }),
+  //         {
+  //             headers: { 'Content-Type': 'application/json' },
+  //             withCredentials: true
+  //         }
+  //     );
+  //     console.log(JSON.stringify(response?.data));
+  //       // history.push("/login");
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //     console.log(user);
+  //   }
+  // };
+
+
+
+
+  const history = useHistory()
+
+    const [ user, setUser] = useState({
+        name: "",
+        email:"",
+        password:"",
+        reEnterPassword: ""
+    })
+
+    const handleChange = e => {
+        const { name, value } = e.target
+        setUser({
+            ...user,
+            [name]: value
+        })
+    }
+
+    const register = () => {
+        const { name, email, password, reEnterPassword } = user
+        if( name && email && password && (password === reEnterPassword)){
+            axios.post("http://localhost/api/user/auth/register", user)
+            .then( res => {
+                alert(res.data.message)
+                history.push("/login")
+            })
+        } else {
+            alert("invlid input")
+        }
+      }    
+    
+
+  return (
+    <div className={style.signUpBody}>
+      <LeftSection imgsrc="./images/sign img.png"/>
+      <div className={style.signUpSection}>
+        <div>
+          
+          <button className={style.loginButton}>Log In</button>
+        </div>
+        <div className={style.signUpForm}>
+          <div className={style.form_wrapper}>
+            <div className={style.form_container}>
+              <div className={style.title_container}>
+                <h1>Welcome,</h1>
+                <h4 className={style.h4}>Please enter the details</h4>
+              </div>
+              <div className={style.row || style.clearfix}>
+                <div className="">
+                  <form>
+                    <div>
+                      <input
+                        className={style.input_field}
+                        id="name"
+                        type="text"
+                        name="name"
+                        value={user.name}
+                        onChange={ handleChange }
+                        placeholder="Name"
+                        // ref={name}
+                        required
+                      />
+                      <input
+                        className={style.input_field}
+                        id="signUpEmail"
+                        type="email"
+                        name="email"
+                        value={user.email}
+                        onChange={ handleChange }
+                        placeholder="Email"
+                        // ref={email}
+                        required
+                      />
+                    </div>
+                    <div>
+                      <input
+                        className={style.input_field}
+                        id="signuppassword"
+                        type="password"
+                        name="password"
+                        value={user.password}
+                        onChange={ handleChange }
+                        placeholder="Password"
+                        // ref={password}
+                        required
+                      />
+                      <input
+                        className={style.input_field}
+                        id="signuprepassword"
+                        type="password"
+                        name="reEnterPassword"
+                        value={user.reEnterPassword}
+                        onChange={ handleChange }
+                        placeholder="Confirm Password"
+                        // ref={passwordAgain}
+                        required
+                      />
+                    </div>
+
+                    <button
+                      className={style.button}
+                      type="submit"
+                      value="Register"
+                      id="registerbutton"
+                      onClick={register}
+                      // onClick={handleClick}
+                    >Submit</button>
+
+                    <div className={style.belowbuttontext}>
+                      <p>
+                        Already have an account?{" "}
+                        <span>
+                          <a href="/">Sign In</a>
+                        </span>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default SignUp;

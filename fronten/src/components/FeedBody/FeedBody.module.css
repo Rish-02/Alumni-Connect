@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Open+Sans:wght@300&family=Outfit:wght@300;400&family=Roboto:wght@300&display=swap');
+
+.posts{
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin: 1rem;
+    margin-left: 0rem;
+    /* width: 532px; */
+    width: 96%;
+
+
+}
+.posts .post__header{
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+.posts .post__header .post__headerleft{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.posts .post__header .post_profile_details h3{
+    font-size: 14px;
+    margin: 0;
+    background-color: #fff;
+    margin-left: 10px;
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+margin-top: -15px;
+}
+.posts .post__header .post_profile_details p{
+    font-size: 10px;
+    background-color: #fff;
+    margin: 0;
+    /* margin-left: 10px; */
+    margin: 0rem 0rem;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+color: rgba(9, 9, 9, 0.5);
+
+/* position: absolute; */
+width: 175px;
+height: 20px;
+/* left: 660px; */
+/* top: 182px; */
+margin: -1.29rem 3.5rem;
+}
+.post__footer{
+    background-color: #fff;
+    display: flex;
+    /* justify-content: space-between; */
+    /* border-top: 1px solid #ccc; */
+    padding-top: 10px;
+    /* margin-top: 10px; */
+
+}
+.post__footer .post__footer__options{
+    display: flex;
+    /* display: none; */
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    /* margin-right: 20px; */
+    margin: 0rem 3.1rem;
+   
+}
+.post__footer .post__footer__options svg{
+  margin-right: 10px;
+  background-color: #fff;
+color: rgb(110, 110, 110);
+}
+.post__footer .post__footer__options span{
+    color: rgb(132, 132, 132);
+    font-size: 12px;
+    font-family: 'Outfit';
+font-style: normal;
+background-color: #fff;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+
+color: #090909;
+
+}
+.post__body{
+    /* display: none; */
+    padding: 0rem;
+    background-color: #fff;
+    padding-bottom: 2rem;
+    margin: -1rem 3.1rem;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #090909;
+
+
+
+}
+/* .MuiAvatar-circular{
+    color: red;
+    background-color: #F6F6F6;
+} */
+p{
+    background-color: #fff;
+}
+h4{
+    background-color: #F6F6F6;
+}
+.share{
+    rotate: 270deg;
+    background-color: #fff;
+    
+}
+/* .MuiSvgIcon-root {
+    background-color: red;
+    color: aqua;
+    display: none;
+} */
+
+.card_image{
+display: none;
+}
+
+
+
+.home_image{
+    height: auto;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.time{
+    background: white;
+}

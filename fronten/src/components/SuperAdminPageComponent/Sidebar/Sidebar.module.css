@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Open+Sans:wght@300&family=Outfit:wght@300;400&family=Roboto:wght@300&display=swap");
+
+.sidebar {
+  flex: 2.4;
+  /* overflow:hidden; */
+  position: sticky;
+
+  height: 100%;
+  width: 100%;
+}
+.sideBarContainer {
+  position: fixed;
+}
+.logoSection {
+  display: flex;
+  align-items: center;
+  /* position: fixed; */
+}
+
+.logo {
+  position: absolute;
+  width: 28.15px;
+  height: 33px;
+  left: 123.41px;
+  top: 32px;
+
+  /* background: #FF8C15; */
+  /* margin: 3em 1em 3em 3em; */
+}
+
+/* .container .logoName {
+  font-size: 2rem;
+  font-weight: 600;
+} */
+
+.sidebarWrapper {
+  /* padding: 125px; */
+  position: absolute;
+  left: 8rem;
+  top: 7rem;
+  width: 10rem;
+  height: 15rem;
+  /* margin-top: 8rem; */
+  /* position: fixed; */
+}
+
+.sidebarListItemText {
+  /* position: absolute; */
+  /* width: 68px; */
+  height: 25px;
+  left: 172px;
+  top: 195px;
+
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  
+  color: #000000;
+
+
+}
+
+
+
+.sidebarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 10rem;
+}
+
+.sidebarIcon {
+  margin-right: 15px;
+}
+
+/* .sidebarButton {
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+} */
+.nameandavatar {
+  display: flex;
+}
+.myname {
+  align-items: center;
+  display: flex;
+  /* position: absolute; */
+  /* display: none; */
+  /* top: 0rem; */
+
+  margin: 322px 24px;
+  width: 8rem;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  
+  color: #090909;
+background: #F6F6F6 !important;
+}
+
+#signOut {
+  text-decoration: none;
+  color: #ff8c15;
+  font-weight: bolder;
+  display: flex;
+  justify-self: flex-end;
+  margin: -19.2px 46px;
+
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  
+  color: rgba(9, 9, 9, 0.5);
+}
+.profilediv {
+  height: 100%;
+  /* margin-top: 15rem; */
+  /* position: relative; */
+  margin-top: 16rem;
+  /* top: 100%; */
+}
+
+.outicon {
+  margin: -2.2rem 15rem;
+}
+
+.logicon {
+  rotate: 180deg;
+  z-index: +4;
+  /* margin: 0rem 18rem; */
+  cursor: pointer;
+}
+
+
+.ad_btn{
+  width: 2rem;
+  border: 0;
+  margin: 0rem 0rem;
+}

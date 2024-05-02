@@ -1,0 +1,9 @@
+.MainMiddleSection{
+    border: 2px solid red;
+    margin-left: 16rem;
+    margin-top: 1rem;
+}
+.Mainpage{
+    display: flex;
+    justify-content: space-between;
+}

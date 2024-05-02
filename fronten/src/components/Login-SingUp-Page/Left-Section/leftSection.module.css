@@ -1,0 +1,62 @@
+*{
+  background: #F6F6F6;
+}
+.container {
+  width: 50%;
+  /* color: rgb(145, 144, 144); */
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  position: absolute;
+    width: 67px;
+    height: 30px;
+    /* left: 150px;
+    top: 128px; */
+    left: 140px;
+    top: 120px;
+    z-index: 1;
+}
+
+.logo {
+  margin: 0em 0em 0em 0em;
+  position: absolute;
+/* height: 600px; */
+/* height: 80%; */
+    width: 40%;
+left: 10%;
+right: 44.58%;
+top: 80px;
+
+}
+
+.container .logoName {
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+margin: 0rem .7rem;
+background-color: #F6F6F6;
+color: #090909;
+
+}
+
+.leftContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0em 0em;
+}
+
+.back_btn{
+  border: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .leftContent{
+    display: none  !important; 
+  }
+}

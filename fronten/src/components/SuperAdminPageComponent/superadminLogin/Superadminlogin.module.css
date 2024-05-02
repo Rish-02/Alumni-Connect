@@ -1,0 +1,128 @@
+.loginBody {
+  display: flex;
+}
+
+.loginSection {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+  /* width: 100%; */
+}
+
+.button {
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 7px 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 84px;
+  height: 36px;
+  left: 264px;
+  top: 270px;
+  border: none;
+  cursor: pointer;
+  color: white;
+
+/* Primary */
+
+  background: #FF8C15;
+  border-radius: 50px;
+
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+}
+
+h5{
+  position: absolute;
+  width: 202px;
+  height: 25px;
+  left: 25px;
+  top: 15px;
+  background-color: #FFFFFF;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+
+color: #000000;
+}
+.input_field1 {
+  padding: 0rem 1rem; 
+  position: absolute;
+  width: 300px;
+  height: 48px;
+  left: 20px;
+  top: 100px;
+  border: 0;
+
+  background: #F6F6F6;
+  border-radius: 16px;
+}
+.label1{
+  position: absolute;
+  width: 41px;
+  height: 20px;
+  left: 25px;
+  top: 70px;
+  background-color: #FFFFFF;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  
+  color: #090909;
+
+}
+
+.input_field2{
+  padding: 0rem 1rem; 
+  position: absolute;
+  width: 300px;
+  height: 48px;
+  left: 20px;
+  top: 190px;
+  border: 0;
+
+background: #F6F6F6;
+border-radius: 16px;
+}
+.label2{
+  position: absolute;
+  width: 41px;
+  height: 20px;
+  left: 25px;
+  top: 160px;
+  background-color: #FFFFFF;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  
+  color: #090909;
+
+}
+
+.form_wrapper {
+  position: absolute;
+  width: 377px;
+  height: 334px;
+  /* left: 943px;
+  top: 128px; */
+  left: 1030px;
+  top: 115px;
+
+  background: #FFFFFF;
+  border-radius: 16px;
+}

@@ -1,0 +1,463 @@
+.profile {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+.profileSection {
+  margin-left: 3rem;
+  flex: 4;
+}
+
+.profileInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.profileInfo .info {
+  display: flex;
+  align-items: center;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.profileInfo img {
+  height: 96px;
+  width: 96px;
+}
+
+.name {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  background-color: #f6f6f6;
+  color: #090909;
+}
+
+.userName {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #f6f6f6;
+  color: rgba(9, 9, 9, 0.5);
+}
+
+.edit_pencil {
+  margin-right: 5rem;
+  width: 128px;
+  height: 36px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: #ff8c15;
+  border: 2px solid #ff8c15;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pencil {
+  color: rgb(0, 0, 0);
+  background-color: #b9b8b8;
+  /* opacity: 0.1; */
+}
+
+.bio {
+  margin-top: 36px;
+  margin-right: 5rem;
+  background: none;
+}
+
+.bio h2 {
+  background: none;
+}
+
+.bio p {
+  background: none;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+.moreInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 35rem;
+}
+
+.moreInfo p {
+  font-weight: lighter;
+  margin-bottom: 10px;
+  background: none;
+}
+
+.popupContainer {
+  position: absolute;
+  top: 10vh;
+  left: 30vw;
+  right: 30vw;
+  background-color: white;
+  background: white;
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.popupContent {
+  margin: 20px;
+  background-color: white;
+}
+
+.popupHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.headRight {
+  display: flex;
+  margin-left: 10px;
+  gap: 25px;
+  background-color: white;
+}
+
+.button2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff8c15;
+  color: white;
+  font-size: 20px;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 5rem;
+  border: 1px solid #ff8c15;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white !important;
+}
+
+label {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 1rem !important;
+  color: #090909;
+  background-color: white;
+  display: flex !important;
+  align-items: flex-start !important;
+  align-self: flex-start !important;
+}
+
+.input {
+  margin: 10px;
+  width: 549px;
+  height: 48px;
+  font-size: 16px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background: #f6f6f6;
+
+  border-radius: 6px;
+}
+
+.textarea {
+  margin: 10px;
+  width: 549px !important;
+  height: 60px !important;
+  font-size: 16px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background: #f6f6f6;
+  border-radius: 6px;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.profileImageInput {
+  display: none;
+}
+
+.profileImageContainer {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #eee;
+  /* background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60); */
+  background-image: url("../../../public/images/profile.jpeg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  /* margin-right: 50% !important; */
+  margin-left: 40% !important;
+}
+
+.profileImageContainer:hover {
+  opacity: 0.8;
+}
+
+.profileImageCamera {
+  position: absolute;
+  /* bottom: 0; */
+  /* right: 0; */
+  left: 38%;
+  top: 40%;
+  width: 30px;
+  background: none;
+  height: 30px;
+  border-radius: 50%;
+  /* background-color: #eee; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.profileImageCamera1 {
+  color: white;
+  background: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.inputfield {
+  display: flex;
+  background-color: white;
+}
+
+.input1 {
+  /* border: 2px solid red !important; */
+  margin-top: 25px;
+  margin-left: -4.3rem;
+  width: 275px;
+  height: 48px;
+  font-size: 16px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background: #f6f6f6;
+
+  border-radius: 6px;
+}
+.input2 {
+  /* border: 2px solid red !important; */
+  margin-top: 25px;
+  margin-left: -5.3rem;
+  width: 265px;
+  height: 48px;
+  font-size: 16px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background: #f6f6f6;
+
+  border-radius: 6px;
+}
+.input3 {
+  /* border: 2px solid red !important; */
+  margin-top: 25px;
+  margin-left: -4.3rem;
+  width: 265px;
+  height: 48px;
+  font-size: 16px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background: #f6f6f6;
+
+  border-radius: 6px;
+}
+
+.input1 option {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: rgba(9, 9, 9, 0.5);
+}
+
+select option {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: rgba(9, 9, 9, 0.5);
+}
+
+/* <<--------------------------------------------------post----------------------------------->>*/
+
+.posts {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* margin: 1rem; */
+  margin-top: 2rem;
+  margin-left: -1rem;
+  /* width: 532px; */
+  width: 92%;
+}
+
+.avatar {
+  top: 10px;
+}
+.posts .post__header {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+.posts .post__header .post__headerleft {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.posts .post__header .post_profile_details h3 {
+  font-size: 14px;
+  margin: 0;
+  background-color: #fff;
+  margin-left: 10px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: -15px;
+}
+.posts .post__header .post_profile_details p {
+  font-size: 10px;
+  background-color: #fff;
+  margin: 0;
+  /* margin-left: 10px; */
+  margin: 0rem 0rem;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: rgba(9, 9, 9, 0.5);
+
+  /* position: absolute; */
+  width: 175px;
+  height: 20px;
+  /* left: 660px; */
+  /* top: 182px; */
+  margin: -1.29rem 3.5rem;
+}
+.post__footer {
+  background-color: #fff;
+  display: flex;
+  /* justify-content: space-between; */
+  /* border-top: 1px solid #ccc; */
+  padding-top: 10px;
+  /* margin-top: 10px; */
+}
+.post__footer .post__footer__options {
+  display: flex;
+  /* display: none; */
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  /* margin-right: 20px; */
+  margin: 0rem 3.1rem;
+}
+.post__footer .post__footer__options svg {
+  margin-right: 10px;
+  background-color: #fff;
+  color: rgb(110, 110, 110);
+}
+.post__footer .post__footer__options span {
+  color: rgb(132, 132, 132);
+  font-size: 12px;
+  font-family: "Outfit";
+  font-style: normal;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #090909;
+}
+.post__body {
+  /* display: none; */
+  padding: 0rem;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin: -1rem 3.1rem;
+ 
+}
+p {
+  background-color: #fff;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #090909;
+}
+h4 {
+  background-color: #f6f6f6;
+}
+.share {
+  rotate: 270deg;
+  background-color: #fff;
+}
+/* .MuiSvgIcon-root {
+  background-color: red;
+  color: aqua;
+  display: none;
+} */
+
+.card_image {
+}
+
+.home_image {
+  height: auto;
+  width: 100%;
+  border-radius: 5rem;
+}
+
+.time {
+  background: white;
+}

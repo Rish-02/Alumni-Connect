@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Open+Sans:wght@300&family=Outfit:wght@300;400&family=Roboto:wght@300&display=swap');
+
+.share {
+  width: 99%;
+  display: flex;
+  /* position: absolute; */
+  /* width: 552px; */
+  height: 154px;
+  left: 405px;
+  top: 0px;
+  margin-top: -1rem;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.shareWrapper {
+  /* padding: 10px; */
+  width: 552px;
+  background: white;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.shareTop {
+  display: flex;
+  /* align-items: center; */
+  background: white;
+}
+
+.shareProfileImg {
+  /* width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px; */
+  /* position: absolute; */
+  margin: 1.5rem 1.5rem;
+  width: 48px;
+  height: 48px;
+  left: 480px;
+  top: 28px;
+  background: white;
+}
+
+.shareInput {
+  border: 0px solid black;
+  height: 25px;
+  width: 75%;
+  margin: 2.3rem -0.4rem;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  background: white;
+  color: rgba(0, 0, 0, 0.5);
+  /* margin-right: 2rem; */
+  /* margin-left: 2rem; */
+  /* padding: 1rem; */
+  /* padding-top: 0rem; */
+  /* padding-bottom: 0rem; */
+  border-radius: 0.3rem;
+
+}
+
+.shareInput:hover {}
+
+.shareInput:focus {
+  outline: none;
+}
+
+
+.shareOptions {
+  display: flex;
+  /* display: none; */
+  margin-left: 5.4rem;
+  position: absolute;
+  top: 7rem;
+  background-color: white;
+
+}
+
+.shareOption {
+  display: flex;
+  /* align-items: center; */
+  /* margin-right: 15px; */
+
+  cursor: pointer;
+}
+
+.shareIcon {
+  font-size: 18px;
+  /* margin-right: 3px; */
+  background: white;
+}
+
+.shareOptionText {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  padding: 0rem .2rem;
+}
+
+.shareBottom {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  position: relative;
+  top: 6.5rem;
+  left: -1rem;
+  margin-left: 11rem;
+  height: 37px;
+  background-color: white;
+
+}
+
+.shareButton {
+  margin: 0rem 0rem;
+  border: none;
+  padding: 7px 25px;
+  height: 36px;
+  width: max-content;
+  /* padding: 2rem; */
+  padding-top: 0;
+  padding-bottom: 0;
+  /* margin-right: 70px; */
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  background: #FF8C15;
+  border-radius: 50px;
+
+
+}
+
+.shareButton:hover {
+  background-color: #fb860a;
+}
